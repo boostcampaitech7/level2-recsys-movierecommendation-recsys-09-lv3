@@ -47,9 +47,6 @@ def parse_args():
 # 5. `pretrain...` `finetune...` 쳐내기
 # 6. `RecBole` 적용
 def main(args):
-    load_dotenv()
-    WANDB_API_KEY = os.environ.get('WANDB_API_KEY')
-
     Setting.set_seed(args.seed)
     setting = Setting()
 
@@ -59,6 +56,9 @@ def main(args):
 
 
 if __name__ == '__main__':
+    load_dotenv()
+    WANDB_API_KEY = os.environ.get('WANDB_API_KEY')
+
     args = parse_args()
 
     config_args = OmegaConf.create(vars(args))
@@ -92,7 +92,7 @@ if __name__ == '__main__':
 
     print(OmegaConf.to_yaml(config_yaml))
 
-    if args.wandb:
+    if args.wandb or config_yaml.wandb:
         import wandb
 
         wandb.init(
