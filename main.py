@@ -16,7 +16,7 @@ from src.utils import Setting, Logger
 def parse_args():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--config', type=str, help='Set configuration file path', required=True)
+    parser.add_argument('--config', '-c', type=str, help='Set configuration file path', required=True)
     parser.add_argument('--model', '-m', type=str, choices=['S3Rec'], help='Set model')
     parser.add_argument('--device', type=str, choices=['cpu', 'cuda'], help='Set device')
     parser.add_argument('--seed', type=int, help='Set seed')
