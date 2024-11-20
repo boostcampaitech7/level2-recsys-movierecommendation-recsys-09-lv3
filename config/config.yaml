@@ -13,7 +13,7 @@ dataloader:
     batch_size: 256
 
 dataset:
-    data_path: data/
+    data_path: data/train/
     data_name: Ml
 
 model_args:
