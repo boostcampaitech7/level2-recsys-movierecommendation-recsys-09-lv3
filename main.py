@@ -96,6 +96,7 @@ if __name__ == '__main__':
         import wandb
 
         wandb.init(
+            entity=config_yaml.wandb_entity,
             project=config_yaml.wandb_project,
             config=OmegaConf.to_container(config_yaml, resolve=True),
             name=config_yaml.run_name if config_yaml.run_name else None,
