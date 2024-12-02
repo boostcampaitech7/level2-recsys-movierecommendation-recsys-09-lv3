@@ -20,6 +20,12 @@ or
 sh run_program.sh
 ```
 
+## How to run memory-based recommendation
+
+```bash
+python3 run_memory_based.py
+```
+
 ## WandB
 1. 루트 디렉토리에 `.env` 파일을 생성(`touch ./.env`)
 2. `.env` 파일에 `WANDB_API_KEY`를 입력
