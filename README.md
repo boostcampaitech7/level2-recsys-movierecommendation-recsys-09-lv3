@@ -25,7 +25,10 @@ sh run_program.sh
 ```bash
 python3 run_memory_based.py
 ```
-
+## How to run ALS.py
+```
+python3 ALS.py
+```
 ## WandB
 1. 루트 디렉토리에 `.env` 파일을 생성(`touch ./.env`)
 2. `.env` 파일에 `WANDB_API_KEY`를 입력
