@@ -1,0 +1,15 @@
+# Data Settings
+field_separator: "\t"
+seq_separator: " "
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+TIME_FIELD: timestamp
+LABEL_FIELD: label
+RATING_FIELD: None
+rm_dup_inter: False
+user_inter_num_interval: "[0, inf)"
+item_inter_num_interval: "[0, inf)"
+load_col:
+    inter: [user_id, item_id, timestamp, label]
+    user : [user_id]
+    item : [item_id, movie_title, movie_genre, movie_director, movie_realese_year]
